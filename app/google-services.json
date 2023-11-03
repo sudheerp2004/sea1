@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "424839773948",
+    "project_id": "sea-hackathon",
+    "storage_bucket": "sea-hackathon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424839773948:android:6feb9f1f6473fc527b2179",
+        "android_client_info": {
+          "package_name": "com.example.sea1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlw_-wWsN6f_Fye_9bF_lQcv72PLxZBPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
