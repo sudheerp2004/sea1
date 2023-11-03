@@ -6,44 +6,49 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".signup">
-    <LinearLayout
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"></ImageView>
+
+    <EditText
+        android:id="@+id/email"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_margin="20dp"
-        android:gravity="center"
-        android:padding="16dp">
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:background="@drawable/et"
+        android:elevation="10dp"
+        android:hint="Enter your username "
+        android:minHeight="48dp"
+        android:padding="20dp"
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"></EditText>
 
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:background="@drawable/et"
+        android:elevation="10dp"
+        android:hint="Enter your username "
+        android:minHeight="48dp"
+        android:padding="20dp"
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"></EditText>
 
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:hint="Email:"
-            android:inputType="textEmailAddress"
-            android:minHeight="48dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signupButton"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20sp"
+        android:background="@drawable/bt"
+        android:textColor="@color/white"
+        android:text="Sign Up">
 
-        <EditText
-            android:id="@+id/passwordEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:hint="Password:"
-            android:inputType="textPassword"
-            android:minHeight="48dp" />
+    </androidx.appcompat.widget.AppCompatButton>
 
-
-
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sign Up"
-            android:background="@drawable/bt"
-            android:id="@+id/signupButton">
-
-        </androidx.appcompat.widget.AppCompatButton>
-    </LinearLayout>
-
-    </LinearLayout>
+</LinearLayout>
