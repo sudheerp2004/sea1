@@ -1,12 +1,11 @@
 package com.example.sea1;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.sea1.databinding.ActivityMainBinding;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.sea1.databinding.ActivityPollBinding;
 
 public class poll extends AppCompatActivity {

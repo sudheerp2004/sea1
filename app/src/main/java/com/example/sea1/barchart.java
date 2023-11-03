@@ -1,21 +1,33 @@
 package com.example.sea1;
 
+import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-
-import com.example.sea1.databinding.ActivityBargraphBinding;
+import com.example.sea1.databinding.ActivityBarchartBinding;
+import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.data.BarData;
+import com.github.mikephil.charting.data.BarDataSet;
+import com.github.mikephil.charting.data.BarEntry;
 
 import java.util.ArrayList;
 
 public class barchart extends AppCompatActivity {
-    private barchart barchart;
+    private ActivityBarchartBinding binding;
+    private BarChart barChart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_barchart);
-        barchart= findViewById(R.id.barchart);
+
+        binding = ActivityBarchartBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
+
+        barChart = binding.barchart;
+
         ArrayList<BarEntry>barEntries= new ArrayList<BarEntry>();
         barEntries.add(new BarEntry(1,5));
         barEntries.add(new BarEntry(2,5));
@@ -24,9 +36,14 @@ public class barchart extends AppCompatActivity {
         barEntries.add(new BarEntry(5,5));
 
         BarDataSet barDataSet = new BarDataSet(barEntries,"Bar DataSet");
-        barDataSet.Setcolors(ColorTemplate.COLORFUL_)
+        barDataSet.setColor(getResources().getColor(R.color.colorPrimary)); // Set color
 
+        BarData barData = new BarData(barDataSet);
+        barData.setBarWidth(0.9f); // Set the width of bars
 
-
+        barChart.setData(barData);
+        barChart.getDescription().setEnabled(false);
+        barChart.setFitBars(true);
+        barChart.invalidate();
     }
 }

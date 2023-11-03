@@ -1,14 +1,12 @@
 package com.example.sea1;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
-import com.example.sea1.databinding.ActivityMainBinding;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.sea1.databinding.ActivityPage1Binding;
 
 public class page1 extends AppCompatActivity {
@@ -33,6 +31,11 @@ public class page1 extends AppCompatActivity {
 
         binding.g2.setOnClickListener(view1 -> {
             Intent i = new Intent(page1.this, poll1.class);
+            startActivity(i);
+        });
+
+        binding.g3.setOnClickListener(view1 -> {
+            Intent i = new Intent(page1.this, barchart.class);
             startActivity(i);
         });
 
