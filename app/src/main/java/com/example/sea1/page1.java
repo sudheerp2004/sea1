@@ -30,7 +30,15 @@ public class page1 extends AppCompatActivity {
 
 
         binding.g2.setOnClickListener(view1 -> {
-            Intent i = new Intent(page1.this, poll1.class);
+            Intent i = new Intent(page1.this, house.class);
+            startActivity(i);
+        });
+        binding.g4.setOnClickListener(view1 -> {
+            Intent i = new Intent(page1.this, industry.class);
+            startActivity(i);
+        });
+        binding.g3.setOnClickListener(view1 -> {
+            Intent i = new Intent(page1.this, agri.class);
             startActivity(i);
         });
 
