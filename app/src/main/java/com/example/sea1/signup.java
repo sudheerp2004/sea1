@@ -33,6 +33,9 @@ public class signup extends AppCompatActivity {
             String email = binding.email.getText().toString();
             String password = binding.password.getText().toString();
 
+
+            
+
             authentication.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this, task -> {
                         if (task.isSuccessful()) {

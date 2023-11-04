@@ -29,11 +29,11 @@ public class barchart extends AppCompatActivity {
         barChart = binding.barchart;
 
         ArrayList<BarEntry>barEntries= new ArrayList<BarEntry>();
-        barEntries.add(new BarEntry(1,5));
-        barEntries.add(new BarEntry(2,5));
-        barEntries.add(new BarEntry(3,5));
-        barEntries.add(new BarEntry(4,5));
-        barEntries.add(new BarEntry(5,5));
+        barEntries.add(new BarEntry(5,4));
+        barEntries.add(new BarEntry(2,4));
+        barEntries.add(new BarEntry(8,4));
+        barEntries.add(new BarEntry(4,4));
+
 
         BarDataSet barDataSet = new BarDataSet(barEntries,"Bar DataSet");
         barDataSet.setColor(getResources().getColor(R.color.colorPrimary)); // Set color

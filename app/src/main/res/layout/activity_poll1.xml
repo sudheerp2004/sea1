@@ -11,7 +11,7 @@
         android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="What's your favorite color?"
+        android:text="What's your favorite city?"
         android:textSize="20dp"
         android:padding="16dp" />
 
@@ -53,7 +53,7 @@
         android:id="@+id/p1q2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="What's your favorite color?"
+        android:text="What's your favorite food?"
         android:textSize="20sp"
         android:padding="16dp" />
     <RadioGroup

@@ -34,10 +34,6 @@ public class page1 extends AppCompatActivity {
             startActivity(i);
         });
 
-        binding.g3.setOnClickListener(view1 -> {
-            Intent i = new Intent(page1.this, barchart.class);
-            startActivity(i);
-        });
 
     }
 }

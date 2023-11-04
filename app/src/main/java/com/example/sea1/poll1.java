@@ -1,5 +1,6 @@
 package com.example.sea1;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +22,11 @@ public class poll1 extends AppCompatActivity {
         binding = ActivityPoll1Binding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
+
+        binding.submit.setOnClickListener(view1 -> {
+            Intent i = new Intent(poll1.this, barchart.class);
+            startActivity(i);
+        });
 
 
     }
