@@ -17,7 +17,7 @@
 
     <!-- Options -->
     <RadioGroup
-        android:id="@+id/op"
+        android:id="@+id/rg_options"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp">
@@ -33,7 +33,7 @@
             android:id="@+id/option2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kulala Lampur " />
+            android:text="Kuala Lumpur" />
         <RadioButton
             android:id="@+id/option3"
             android:layout_width="wrap_content"
@@ -43,12 +43,12 @@
             android:id="@+id/option4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ipoh" />
+            android:text="Ipoh" />
         <RadioButton
             android:id="@+id/option5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="klang" />
+            android:text="Klang" />
         <RadioButton
             android:id="@+id/option6"
             android:layout_width="wrap_content"
@@ -60,12 +60,28 @@
 
     </RadioGroup>
 
-    <!-- Submit Button -->
-    <Button
-        android:id="@+id/submitButton"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        android:layout_marginLeft="150dp"
-        android:onClick="submitVote" />
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_margin="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="submitVote" />
+
+        <Button
+            android:id="@+id/graphButton"
+            android:layout_margin="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Graph"
+            android:onClick="submitVote" />
+
+    </LinearLayout>
+
 </LinearLayout>
