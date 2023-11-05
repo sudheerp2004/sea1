@@ -21,7 +21,7 @@ public class splash extends AppCompatActivity {
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
 
         new Handler().postDelayed(() -> {
-            Intent i =new Intent(splash.this,MainActivity.class);
+            Intent i = new Intent(splash.this,MainActivity.class);
             startActivity(i);
         },SPLASHTIME);
     }
