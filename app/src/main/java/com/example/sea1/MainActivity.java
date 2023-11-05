@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             String password = binding.password.getText().toString();
 
             if (email.equals("admin@sea.com") && password.equals("admin1234")) {
-                Intent i = new Intent(MainActivity.this, poll.class);
+                Intent i = new Intent(MainActivity.this, barchart.class);
                 startActivity(i);
             }
 

@@ -29,10 +29,10 @@ public class barchart extends AppCompatActivity {
         barChart = binding.barchart;
 
         ArrayList<BarEntry>barEntries= new ArrayList<BarEntry>();
-        barEntries.add(new BarEntry(5,4));
-        barEntries.add(new BarEntry(2,4));
+        barEntries.add(new BarEntry(6,2));
+        barEntries.add(new BarEntry(2,9));
         barEntries.add(new BarEntry(8,4));
-        barEntries.add(new BarEntry(4,4));
+        barEntries.add(new BarEntry(4,7));
 
 
         BarDataSet barDataSet = new BarDataSet(barEntries,"Bar DataSet");

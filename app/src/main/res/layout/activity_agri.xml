@@ -19,7 +19,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Select Image"
+        android:text="Upload Files "
+        android:background="@drawable/bt"
+
         android:onClick="selectImage" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="submit "
+        android:background="@drawable/bt" />
+
+
+
 
 </LinearLayout>

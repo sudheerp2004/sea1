@@ -27,6 +27,10 @@ public class agri extends AppCompatActivity {
         setContentView(view);
 
         binding.selectImageButton.setOnClickListener(view1 -> selectImage());
+        binding.sub.setOnClickListener(view1 -> {
+            Intent i = new Intent(agri.this, report.class);
+            startActivity(i);
+        });
     }
 
     public void selectImage() {
@@ -46,4 +50,8 @@ public class agri extends AppCompatActivity {
             }
         }
     }
+
+
+
+
 }

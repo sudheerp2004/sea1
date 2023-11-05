@@ -29,8 +29,9 @@ public class page1 extends AppCompatActivity {
         });
 
 
+
         binding.g2.setOnClickListener(view1 -> {
-            Intent i = new Intent(page1.this, house.class);
+            Intent i = new Intent(page1.this, animate.class);
             startActivity(i);
         });
         binding.g4.setOnClickListener(view1 -> {
@@ -41,6 +42,10 @@ public class page1 extends AppCompatActivity {
             Intent i = new Intent(page1.this, agri.class);
             startActivity(i);
         });
+
+
+
+
 
 
     }
